@@ -14,3 +14,5 @@ def authentication(username,signInPassword):
 def nuCreds(username,accountName,accountPassword):
     nuCreds=Credentials(username,accountName,accountPassword)
     return nuCreds
+
+def storeCreds
