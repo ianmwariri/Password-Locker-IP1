@@ -4,7 +4,7 @@ class Credentials:
     #Defining a list that will contain all user credentials
     credList=[]
    
-    def store_credentials(self):
+    def storeCredentials(self):
         Credentials.credList.append(self)
     
     def rub_credentials(self):
