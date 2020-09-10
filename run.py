@@ -7,3 +7,10 @@ def nuUser(username, signInPassword):
 
 def saveAccount(user):
     user.signUpUser()
+
+def authentication(username,signInPassword):
+    return User.userLoginAuthentication(username, signInPassword)
+
+def nuCreds(username,accountName,accountPassword):
+    nuCreds=Credentials(username,accountName,accountPassword)
+    return nuCreds
