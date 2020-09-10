@@ -27,4 +27,13 @@ def retrieveAccPswd(accName):
 def retrieveAccName(accName):
     return Credentials.locateName(accName)
 
-def show
+def showCred(accName):
+    return Credentials.availableCreds(accName)
+
+def locateCred(accName):
+    return Credentials.availableCreds(accName)
+
+def showCreds():
+    return Credentials.showCred()
+
+def generatePswd(length)
