@@ -1,3 +1,5 @@
+import pyperclip
+
 class Credentials:
     #Defining a list that will contain all user credentials
     credList=[]
@@ -32,3 +34,19 @@ class Credentials:
     
         return False
    
+    class User:
+        userList=[]
+        def signedUpUser(self):
+            User.userList.append(self)
+        
+        def __init__(self, username,signInPasswd):
+            self.username=username
+            self.signInPasswd=signInPasswd
+        
+        @classmethod
+        def userLoginAuthentication(allCreds,username,auth_password):
+            for user in allCreds.userList:
+                if user.username==username
+
+
+    
