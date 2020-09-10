@@ -7,7 +7,7 @@ class Credentials:
     def storeCred(self):
         Credentials.credList.append(self)
     
-    def rubCredentials(self):
+    def rubCred(self):
         Credentials.credList.remove(self)
 
     def __init__ (self, username,accountName,accountPassword):
