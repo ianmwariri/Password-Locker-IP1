@@ -36,4 +36,12 @@ def locateCred(accName):
 def showCreds():
     return Credentials.showCred()
 
-def generatePswd(length)
+def generatePswd(length):
+    pswdsList=[]
+    counter=1
+    while counter<=length:
+        randomisePswd=random.choice(string.ascii_lowercase + string.digits + string.ascii_uppercase)
+        pswdsList.append(randomisePswd)
+        counter+=1
+    return "".join(pswdsList)
+
