@@ -15,4 +15,5 @@ def nuCreds(username,accountName,accountPassword):
     nuCreds=Credentials(username,accountName,accountPassword)
     return nuCreds
 
-def storeCreds
+def storeCred(cred):
+    cred.storeCred()
