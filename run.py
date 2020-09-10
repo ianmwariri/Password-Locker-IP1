@@ -5,5 +5,5 @@ def nuUser(username, signInPassword):
     nuUser=User(username,signInPassword)
     return nuUser
 
-def newAccount(user):
+def saveAccount(user):
     user.signUpUser()
