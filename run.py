@@ -26,3 +26,5 @@ def retrieveAccPswd(accName):
 
 def retrieveAccName(accName):
     return Credentials.locateName(accName)
+
+def show

@@ -37,11 +37,11 @@ class Credentials:
                 Credentials.rubCreds(cred)
     
     @classmethod 
-    def show_cred(cls):
+    def showCred(cls):
         return cls.credList
     
     @classmethod
-    def available_creds(cls,accName):
+    def availableCreds(cls,accName):
         for cred in cls.credList:
             if cred.accountName==accName:
                  return True
