@@ -21,7 +21,8 @@ def storeCreds(cred):
 def rubCred(accName):
     Credentials.rubCred(accName)
 
-def retrievePswd(accountName):
+def retrieveAccPswd(accName):
     return Credentials.locateAccount(accName)
 
-def retrieveAccName
+def retrieveAccName(accName):
+    return Credentials.locateName(accName)
