@@ -4,10 +4,10 @@ class Credentials:
     #Defining a list that will contain all user credentials
     credList=[]
    
-    def storeCred(self):
+    def storeCreds(self):
         Credentials.credList.append(self)
     
-    def rubCred(self):
+    def rubCreds(self):
         Credentials.credList.remove(self)
 
     def __init__ (self, username,accountName,accountPassword):
@@ -21,7 +21,20 @@ class Credentials:
 
         for cred in cls.credList:
             if cred.accountName==accName:
-                return cred.accountPassword
+                return cred.accountName
+    
+    @classmethod
+    def locateName(cls, accName):
+        for cred in cls.credList:
+            if cred.accountName==accName:
+                return cred.accountName
+
+
+    @classmethod            
+    def rubCred(cls,accName):
+        for cred in cls.credList:
+            if cred.accountName==accName:
+                Credentials.rubCreds(cred)
     
     @classmethod 
     def show_cred(cls):
